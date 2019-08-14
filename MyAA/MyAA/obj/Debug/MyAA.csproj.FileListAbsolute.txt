@@ -1,0 +1,6 @@
+E:\ACCP\S4\T117\J2\J2_C1-GIT\Demo5\MyAA\MyAA\bin\MyAA.dll.config
+E:\ACCP\S4\T117\J2\J2_C1-GIT\Demo5\MyAA\MyAA\bin\MyAA.dll
+E:\ACCP\S4\T117\J2\J2_C1-GIT\Demo5\MyAA\MyAA\bin\MyAA.pdb
+E:\ACCP\S4\T117\J2\J2_C1-GIT\Demo5\MyAA\MyAA\obj\Debug\MyAA.csprojResolveAssemblyReference.cache
+E:\ACCP\S4\T117\J2\J2_C1-GIT\Demo5\MyAA\MyAA\obj\Debug\MyAA.dll
+E:\ACCP\S4\T117\J2\J2_C1-GIT\Demo5\MyAA\MyAA\obj\Debug\MyAA.pdb

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width;" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        div.demo div[class*=col] {
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <h3>
+                最佳体验的响应式布局：<br />
+                设置单元格<code>&lt;div class="col-*"&gt;</code>在不同大小的屏幕下所占的列数
+            </h3>
+            <blockquote>
+                <p>
+                    大屏和中屏时，显示为每行4个<code>div</code>，每个<code>div</code>占3列。<br />
+                    小屏时，显示为每行2个<code>div</code>，每个<code>div</code>占6列。<br />
+                    超小屏时，显示为每行1个<code>div</code>，每个<code>div</code>占12列。<br />
+                </p>
+            </blockquote>
+        </div>
+        <div class="container demo">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    col-md-3 col-sm-6
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    col-md-3 col-sm-6
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    col-md-3 col-sm-6
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    col-md-3 col-sm-6
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h3>
+                列前缀
+            </h3>
+            <blockquote>
+                <dl class="dl-horizontal">
+                    <dt>超小屏：</dt>
+                    <dd>col-xs-*</dd>
+                    <dt>小屏：</dt>
+                    <dd>col-sm-*</dd>
+                    <dt>中屏：</dt>
+                    <dd>col-md-*</dd>
+                    <dt>大屏：</dt>
+                    <dd>col-lg-*</dd>
+                </dl>
+            </blockquote>
+        </div>
+    </div>
+
+</body>
+</html>

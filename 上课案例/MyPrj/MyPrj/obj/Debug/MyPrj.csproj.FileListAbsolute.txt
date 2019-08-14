@@ -1,0 +1,6 @@
+E:\ACCP\S4\T117\J2\J2_C2--BootStarp起步与定制\上课案例\MyPrj\MyPrj\bin\MyPrj.dll.config
+E:\ACCP\S4\T117\J2\J2_C2--BootStarp起步与定制\上课案例\MyPrj\MyPrj\bin\MyPrj.dll
+E:\ACCP\S4\T117\J2\J2_C2--BootStarp起步与定制\上课案例\MyPrj\MyPrj\bin\MyPrj.pdb
+E:\ACCP\S4\T117\J2\J2_C2--BootStarp起步与定制\上课案例\MyPrj\MyPrj\obj\Debug\MyPrj.csprojResolveAssemblyReference.cache
+E:\ACCP\S4\T117\J2\J2_C2--BootStarp起步与定制\上课案例\MyPrj\MyPrj\obj\Debug\MyPrj.dll
+E:\ACCP\S4\T117\J2\J2_C2--BootStarp起步与定制\上课案例\MyPrj\MyPrj\obj\Debug\MyPrj.pdb

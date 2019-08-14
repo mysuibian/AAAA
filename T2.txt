@@ -1,0 +1,69 @@
+前端:
+  EasyUI LayUI Jquery H5/CSS3
+S4-2:BootStrap Vue
+
+
+
+
+一>.Bootstrap
+  1>.什么是Bootstrap
+      简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。
+
+      跨平台（响应式布局,PC，平板，手机，手表）,开源的
+    
+  2>.Bootstrap官网
+    ---起步:
+     a>.下载时候基于三种模式:
+       1>.生产环境的(正式部署) 
+       2>.基于Less的Bootstrap(开发)--->用这个下载
+       3>.基于Sass的Bootstrap(开发)
+       
+     b>.什么是Less以及Sass:
+       1>.编写动态CSS语言,使用LESS、SASS生成一个CSS：定义变量，函数，OOP（继承封装多态）
+     
+     c>.BootStrap目录结构:
+        dist:目标
+
+
+     d>.安装Bootstrap
+        1). CDN:加速
+            1.1>.说白了，就是使用CDN服务器的资源文件,而不是都依赖自己的服务器.
+
+   			
+        2). 下载并应用
+            2.1>.第一种方式:直接下载
+            2.2>.使用NPM(包管理器,学前端UI的必须会)下载
+               2.2.1>.需要首先安装NPM包管理器
+
+        3).基本要引用的模板:
+           bootstrap.min.css----1
+           bootstrap-theme.min.css (可选的)
+           Jquery.min.js ----2
+           bootstrap.min.js ----3
+
+        4).<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--在IE更加优化的显示-->
+
+	5>.<meta name="viewport" content="width=device-width, initial-scale=1"><!--更好的再移动端显示-->
+
+-------------------------------------------------------------------------------     -------------------------------------------------------------------------------
+
+一>.全局CSS样式:
+ 1>.栅格:
+  a>.要按这种框架写三个
+   <div class="container"> 
+        <div class="row">
+	   栅格
+        </div>
+   </div>
+
+   设置了小的，大的会按小的来(设置了SM那么MD会按SM的样式)
+ 
+
+  b>.布局方式2种:
+   container:固定宽度 左右两边预留位置-->推荐
+   container-fluid：定宽布局 100%的宽度
+
+  b>.visible-sm-bloc
+
+
+

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width;" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        div.demo div[class*=col] {
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color:#eee;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <h3>
+                最佳体验的响应式布局：<br />
+                设置元素在不同大小的屏幕下<mark>显示</mark>还是<mark>不显示</mark>
+            </h3>
+            <blockquote>
+                仅在大屏时，显示第5个<code>div</code>且占4列，前4个<code>div</code>各占2列。<br />
+                中屏时，显示为每行4个<code>div</code>，每个<code>div</code>占3列。<br />
+                小屏时，显示为每行2个<code>div</code>，每个<code>div</code>占6列。<br />
+                超小屏时，显示为每行1个<code>div</code>，每个<code>div</code>占12列，并且不显示第末行。<br />
+                <small>其中 visible-lg 表示仅在大屏时才显示</small>
+                <small>其中 hidden-xs 表示仅在超小屏时才隐藏</small>
+            </blockquote>
+        </div>
+        <div class="container demo">
+            <!-- 第1行 -->
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <code>col-lg-2</code> <br />
+                    <code>col-md-3</code> <br />
+                    <code>col-sm-6</code> <br />
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <code>col-lg-2</code> <br />
+                    <code>col-md-3</code> <br />
+                    <code>col-sm-6</code> <br />
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <code>col-lg-2</code> <br />
+                    <code>col-md-3</code> <br />
+                    <code>col-sm-6</code> <br />
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <code>col-lg-2</code> <br />
+                    <code>col-md-3</code> <br />
+                    <code>col-sm-6</code> <br />
+                </div>
+                <div class="col-lg-4 visible-lg-block">
+                    这是第5个<code>div</code> <br />
+                    <code>col-lg-4</code> <br />
+                    <code>visible-lg-block</code> <br />
+                </div>
+            </div>
+            <!-- 第末行 -->
+            <div class="row">
+                <div class="col-sm-12 hidden-xs">
+                    <span class="hidden-lg">这是第末行</span> <br />
+                    <code>col-sm-12</code> <br />
+                    <code>hidden-xs</code> <br />
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h3>
+                用于隐藏的样式类
+            </h3>
+            <blockquote>
+                <dl class="dl-horizontal">
+                    <dt>仅在超小屏时隐藏：</dt>
+                    <dd>hidden-xs</dd>
+                    <dt>仅在小屏时隐藏：</dt>
+                    <dd>hidden-sm</dd>
+                    <dt>仅在中屏时隐藏：</dt>
+                    <dd>hidden-md</dd>
+                    <dt>仅在大屏时隐藏：</dt>
+                    <dd>hidden-lg</dd>
+                </dl>
+            </blockquote>
+            <h3>
+                用于显示的样式类
+            </h3>
+            <blockquote>
+                <dl class="dl-horizontal">
+                    <dt>仅在超小屏时显示：</dt>
+                    <dd>visible-xs-*</dd>
+                    <dt>仅在小屏时显示：</dt>
+                    <dd>visible-sm-*</dd>
+                    <dt>仅在中屏时显示：</dt>
+                    <dd>visible-md-*</dd>
+                    <dt>仅在大屏时显示：</dt>
+                    <dd>visible-lg-*</dd>
+                </dl>
+                <small>其中的 * 号可选值有：<code>block</code>、<code>inline</code>、<code>inline-block</code></small>
+                <small>不要 * 号的<code>visible-md</code>等样式类也是存在的，不过在3.2.0新版本开始不建议使用</small>
+            </blockquote>
+<pre>
+注意：显示隐藏类，不仅可用于栅格系统，也可以用于任何元素。
+</pre>
+        </div>
+    </div>
+
+</body>
+</html>

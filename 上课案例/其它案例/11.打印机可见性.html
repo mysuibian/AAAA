@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width;" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        div.demo div[class*=col] {
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <h3>打印机可见性</h3>
+            <blockquote>
+                注意：打印机的纸张大小当成是屏幕大小
+            </blockquote>
+        </div>
+        <div class="container demo">
+            <div class="row">
+                <div class="col-lg-6">
+                    1.都可见 <br />
+                    <code>col-xs-6</code> 任何屏都是占6列 <br />
+                    <br />
+                </div>
+                <div class="col-lg-6 hidden-print">
+                    2.打印机不可见 <br />
+                    <code>col-xs-6</code> 任何屏都是占6列 <br />
+                    <code>hidden-print</code> 打印机不可见 <br />
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width;" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        div.demo div[class*=col] {
+            padding: 20px 15px; /* 内边距：上下20px，左右15px。(15px是默认值，之前学过了哦！) */
+            border: 1px solid #ccc;
+            background-color: #eee;
+        }
+
+        div.demo2 div[class*=col] {
+            background-color: #fee;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <h3>直接嵌套会有问题</h3>
+        </div>
+        <div class="container demo">
+            <div class="row">
+                <div class="col-sm-12">
+                    第1层
+                    <div class="container demo2">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                第2层
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container">
+            <h3>嵌套时，不再需要 <code>container</code> 容器</h3>
+        </div>
+        <div class="container demo">
+            <div class="row">
+                <div class="col-sm-12">
+                    第1层
+                    <div class="row demo2">
+                        <div class="col-xs-12">
+                            第2层
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

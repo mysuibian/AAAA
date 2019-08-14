@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width;" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        div.demo div[class*=col] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <h3>列排序</h3>
+        </div>
+        <div class="container demo">
+            <div class="row">
+                <div class="col-md-9 col-md-push-3">
+                    第1个<code>div</code> <br />
+                    <code>.col-md-9</code> 占9列 <br />
+                    <code>.col-md-push-3</code> 向后<kbd>推</kbd>动3列
+                </div>
+                <div class="col-md-3 col-md-pull-9">
+                    第2个<code>div</code> <br />
+                    <code>.col-md-3</code> 占3列 <br />
+                    <code>.col-md-pull-9</code> 向前<kbd>拉</kbd>动9列
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width;" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        div.demo.container, div.demo.container-fluid {
+            border: 1px solid #f00;
+        }
+
+        div.demo div.row {
+            border: 1px solid #0f0;
+        }
+
+        div.demo div[class*=col] {
+            border: 1px solid #00f;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <h3>
+                1.container 普通栅格系统
+            </h3>
+            <blockquote>
+                container使用768px、992px、1200px三个阀值，将屏幕分为超小xs、小sm、中md、大lg四个档次<br />
+                试操作将浏览器的宽度慢慢调小，你会发现container的宽度会在超过阀值点时变小。 <br />
+                当变到最小的时候，也就是超小屏幕时，所有col单元格都独占一行。<br />
+            </blockquote>
+        </div>
+        <div class="container demo">
+            <div class="row">
+                <div class="col-sm-6">
+                    左边
+                </div>
+                <div class="col-sm-6">
+                    右边
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container">
+            <h3>
+                2.container-fluid 流式栅格系统
+            </h3>
+            <blockquote>
+                使用container-fluid编写流式栅格系统，铺满整个屏幕，而不是依赖阀值 <br />
+                当然，即便使用流式栅格系统，当屏幕进入超小屏幕时，col也同样独占一行 <br />
+            </blockquote>
+        </div>
+        <div class="container-fluid demo">
+            <div class="row">
+                <div class="col-sm-6">
+                    左边
+                </div>
+                <div class="col-sm-6">
+                    右边
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

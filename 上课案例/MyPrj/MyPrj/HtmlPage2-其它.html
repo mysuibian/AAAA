@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="BootStarp/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="BootStarp/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <style>
+       .row div{
+           background-color:#4cff00;
+           /*border:1px solid red;*/
+       }
+    </style>
+</head>
+<body>
+    <h1>列嵌套</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">左边</div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-2"><a href="#">首页</a></div>
+                    <div class="col-sm-2"><a href="#">推荐</a></div>
+                    <div class="col-sm-2"><a href="#">推荐</a></div>
+                    <div class="col-sm-2"><a href="#">推荐</a></div>
+                    <div class="col-sm-2"><a href="#">推荐</a></div>
+                    <div class="col-sm-2"><a href="#">推荐</a></div>
+                </div>
+            </div>
+            <div class="col-sm-2">右边</div>
+        </div>
+    </div>
+    <hr />
+    <h1>列偏移</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">aaaaa</div>
+            <!--<div class="col-sm-4">aaaaa</div>-->
+            <div class="col-sm-4 col-sm-offset-4">aaaaa</div>
+        </div>
+    </div>
+    <h1>列的排序</h1>
+    <div class="row">
+        <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+        <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+    </div>
+</body>
+</html>
+<script src="BootStarp/js/jquery.min.js"></script>
+<script src="BootStarp/js/bootstrap.min.js"></script>

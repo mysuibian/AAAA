@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width;" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        div.demo.container {
+            border:1px solid #f00;
+            margin:0px auto 20px auto; /* 上0px 右auto 下20px 左auto */
+        }
+        div.demo div.row {
+            border:1px solid #0f0;
+        }
+        div.demo div[class*=col] {
+            border:1px solid #00f;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1.默认 -->
+    <div>
+        <div class="container"><h3>1.默认</h3></div>
+        <div id="demo1" class="container demo">
+            <div class="row">
+                <div class="col-sm-6">
+                    内容
+                </div>
+                <div class="col-sm-6">
+                    内容
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2.为col设置padding可以增减列与列之间的间隔 -->
+    <div>
+        <div class="container"><h3>2.为col设置padding可以增减列与列之间的间隔</h3></div>
+        <div id="demo2a" class="container demo">
+            <div class="row">
+                <div class="col-sm-6">
+                    增加列与列之间的间隔
+                </div>
+                <div class="col-sm-6">
+                    增加列与列之间的间隔
+                </div>
+            </div>
+        </div>
+        <style>
+            /* 增加列与列之间的间隔 */
+            #demo2a div[class*=col] {
+                padding: 20px 30px; /* 上下间隔10px 左右间隔20px */
+            }
+        </style>
+        <div id="demo2b" class="container demo">
+            <div class="row">
+                <div class="col-sm-6">
+                    使单元格的内容紧靠单元格
+                </div>
+                <div class="col-sm-6">
+                    使单元格的内容紧靠单元格
+                </div>
+            </div>
+        </div>
+        <style>
+            /* 使单元格的内容紧靠单元格 */
+            #demo2b div[class*=col] {
+                padding: 0px;
+            }
+        </style>
+    </div>
+
+    <!-- 3.只能为 container 设置上下外边距离，不能设置左右外边距离 -->
+    <div>
+        <div class="container"><h3>3.只能为 container 设置上下外边距离，不能设置左右外边距离</h3></div>
+        <div id="demo3a" class="container demo">
+            <div class="row">
+                <div class="col-sm-6">
+                    仅仅只设置上下外边距是可以的
+                </div>
+                <div class="col-sm-6">
+                    仅仅只设置上下外边距是可以的
+                </div>
+            </div>
+        </div>
+        <div id="demo3b" class="container demo">
+            <div class="row">
+                <div class="col-sm-6">
+                    设置左右外边距是有问题的
+                </div>
+                <div class="col-sm-6">
+                    设置左右外边距是有问题的
+                </div>
+            </div>
+        </div>
+        <style>
+            #demo3a.container {
+                margin: 50px auto; /* 上下0px，左右auto */
+            }
+
+            #demo3b.container {
+                margin: 0px 0px; /* 上下0px，左右0px */
+            }
+        </style>
+    </div>
+
+    <!-- 4.注意 container 的左右内边距默认是 15px -->
+    <div>
+        <div class="container"><h3>4.注意 container 的左右内边距默认是 15px (红线是container，绿线是row)</h3></div>
+        <div id="demo4a" class="container demo">
+            <div class="row">
+                <div class="col-sm-6">
+                    container的左右内边距是0px;
+                </div>
+                <div class="col-sm-6">
+                    container的左右内边距是0px;
+                </div>
+            </div>
+        </div>
+        <div id="demo4b" class="container demo">
+            <div class="row">
+                <div class="col-sm-6">
+                    container的左右内边距是15px; (默认值)
+                </div>
+                <div class="col-sm-6">
+                    container的左右内边距是15px; (默认值)
+                </div>
+            </div>
+        </div>
+        <style>
+            #demo4a.container {
+                padding:0px 0px;
+            }
+            #demo4b.container {
+                padding:0px 15px; /* 默认值 */
+            }
+        </style>
+    </div>
+
+    <!-- 5.注意 row 的左右外边距默认是 -15px -->
+    <div>
+        <div class="container">
+            <h3>
+                5.注意 row 的左右外边距默认是 -15px (红线是container，绿线是row)
+                
+            </h3>
+            <blockquote>
+                container的默认内边距离15px
+                正好与
+                row的默认外边距-15px
+                相抵消。
+            </blockquote>
+        </div>
+        <div id="demo5a" class="container demo">
+            <div class="row">
+                <div class="col-sm-6">
+                    row的左右外边距是15px
+                </div>
+                <div class="col-sm-6">
+                    row的左右外边距是15px
+                </div>
+            </div>
+        </div>
+        <div id="demo5b" class="container demo">
+            <div class="row">
+                <div class="col-sm-6">
+                    row的左右外边距是0px
+                </div>
+                <div class="col-sm-6">
+                    row的左右外边距是0px
+                </div>
+            </div>
+        </div>
+        <div id="demo5c" class="container demo">
+            <div class="row">
+                <div class="col-sm-6">
+                    row的左右外边距是-15px (默认值)
+                </div>
+                <div class="col-sm-6">
+                    row的左右外边距是-15px (默认值)
+                </div>
+            </div>
+        </div>
+        <div id="demo5d" class="container demo">
+            <div class="row">
+                <div class="col-sm-6">
+                    row的左右外边距是-30px
+                </div>
+                <div class="col-sm-6">
+                    row的左右外边距是-30px
+                </div>
+            </div>
+        </div>
+        <style>
+            /* 5.注意 row 的左右外边距默认是 -15px */
+            #demo5a div.row {
+                margin: 0px -15px;
+            }
+
+            #demo5b div.row {
+                margin: 0px 0px;
+            }
+
+            #demo5c div.row {
+                margin: 0px -15px; /* 这是默认值 */
+            }
+
+            #demo5d div.row {
+                margin: 0px -30px;
+            }
+        </style>
+    </div>
+
+    <!-- 6.单元格的外边距不能设置，只能设置内边距 -->
+    <div>
+        <div class="container"><h3>6.单元格的外边距不能设置，只能设置内边距 (红线是container，绿线是row，蓝线是col)</h3></div>
+        <div id="demo6" class="container demo">
+            <div class="row row1">
+                <div class="col-sm-6">
+                    单元格外边距是 4px，有问题！
+                </div>
+                <div class="col-sm-6">
+                    单元格外边距是 4px，有问题！
+                </div>
+            </div>
+            <div class="row row2">
+                <div class="col-sm-6">
+                    单元格外边距是 -4px，有问题！
+                </div>
+                <div class="col-sm-6">
+                    单元格外边距是 -4px，有问题！
+                </div>
+            </div>
+            <div class="row row3">
+                <div class="col-sm-6">
+                    单元格内边距是 4px，没问题。
+                </div>
+                <div class="col-sm-6">
+                    单元格内边距是 4px，没问题。
+                </div>
+            </div>
+        </div>
+        <style>
+            #demo6 div.row1 div[class*=col] {
+                margin:4px;
+            }
+            #demo6 div.row2 div[class*=col] {
+                margin:-4px;
+            }
+            #demo6 div.row3 div[class*=col] {
+                padding:4px;
+            }
+        </style>
+    </div>
+</body>
+</html>
